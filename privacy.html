@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hikari · Privacy Policy</title>
+<style>
+:root{color-scheme:dark;--bg:#0B1322;--panel:#172338;--text:#EEF2FA;--muted:#94A0B8;--gold:#F5C542;--cyan:#2ED3F5}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 system-ui,Segoe UI,Inter,sans-serif}
+header{display:flex;align-items:center;gap:14px;padding:22px 24px;border-bottom:1px solid #22304a}
+.mark{width:40px;height:40px;border-radius:12px;background:#15203A;display:grid;place-items:center;color:var(--gold);font-weight:700;font-size:22px;box-shadow:0 0 18px rgba(46,211,245,.25)}
+nav a{color:var(--muted);text-decoration:none;margin-right:16px}nav a:hover,nav a[aria-current]{color:var(--text)}
+main{max-width:820px;margin:0 auto;padding:32px 24px 64px}h1{font-size:30px;margin:.2em 0 .4em}h2{font-size:20px;margin-top:1.6em;color:var(--gold)}
+p,li{color:#cbd5e6}a{color:var(--cyan)}code{background:#111B2F;padding:1px 5px;border-radius:5px;font-size:.92em}
+.card{background:var(--panel);border:1px solid #22304a;border-radius:16px;padding:20px 22px;margin:14px 0}
+footer{color:var(--muted);text-align:center;padding:24px;font-size:13px;border-top:1px solid #22304a}
+.hero{text-align:center;padding:40px 0 10px}.hero p{color:var(--muted);max-width:620px;margin:10px auto 0}
+.pill{display:inline-block;border:1px solid #22304a;border-radius:999px;padding:4px 12px;color:var(--muted);font-size:13px;margin:4px}
+</style></head><body>
+<header><div class="mark">光</div><div><div style="font-weight:600">Hikari</div><div style="color:var(--muted);font-size:12px;letter-spacing:.14em;text-transform:uppercase">command center</div></div>
+<nav style="margin-left:auto"><a href="./" >Home</a><a href="privacy.html" aria-current="page">Privacy</a><a href="terms.html" >Terms</a></nav></header>
+<main><h1>Hikari Privacy Policy</h1>
+<p>Last updated: October 26, 2026 · Version 1</p>
+<p>Hikari is designed so that your information stays with you. This policy explains what the App stores, what leaves your computer, and how to remove it.</p>
+<h2>What the App stores on your computer</h2>
+<ul>
+<li><strong>Local database</strong> (SQLite, in your Windows app-data folder): tasks, habits, focus sessions, projects, notes, courses, assignments, exams, countdowns, dashboard layouts and settings; cached calendar events; cached email headers, text bodies and AI summaries; AI briefings and chat history; a weather cache.</li>
+<li><strong>Windows Credential Manager</strong>: your Google refresh token, your Google OAuth client secret, your Canvas access token and any AI API key you enter. These are never written to the database or included in settings exports.</li>
+<li><strong>Log files</strong> (app log folder): technical diagnostics such as connection errors. Logs do not contain email bodies or credentials.</li>
+<li><strong>Artwork you import</strong> (background or character images) is copied into the app-data folder.</li>
+</ul>
+<h2>What leaves your computer, and when</h2>
+<p>Nothing is sent anywhere until you connect a service. When you do:</p>
+<ul>
+<li><strong>Google (Calendar, Gmail)</strong>: the App requests read-only access and sends authenticated requests to Google&#x27;s APIs to list calendars, events and messages. The App does not send, delete, label or mark messages, and does not share Google data with any other party. Google&#x27;s handling of your data is governed by Google&#x27;s privacy policy. Use of information received from Google APIs adheres to the Google API Services User Data Policy, including the Limited Use requirements.</li>
+<li><strong>Canvas LMS</strong>: the App reads courses, assignments, submission status and announcements from your institution&#x27;s Canvas server using your token.</li>
+<li><strong>Weather</strong>: the App sends the coordinates of the city you chose to Open-Meteo. Your device location is never read.</li>
+<li><strong>Local AI server</strong>: when enabled, the App sends email text, calendar and coursework records, project notes and your questions to the language-model server address you configured. By default this is a loopback address on your own PC (LM Studio), so the data does not leave the machine. If you configure a non-local address, the App warns you and requires explicit consent before sending private content there.</li>
+<li><strong>Links</strong>: opening an email, assignment or event in the browser hands that URL to your default browser.</li>
+</ul>
+<p>The App contains <strong>no analytics, telemetry, advertising or crash reporting</strong>. The Author receives no data from your use of the App.</p>
+<h2>Data retention and deletion</h2>
+<ul>
+<li>Cached email is limited to the digest window plus a short buffer and is removed when it falls out of the window.</li>
+<li>You can clear cached email, clear AI-generated content, disconnect any service (which also revokes the Google grant and deletes the stored tokens), or delete all local data from <strong>Settings → Data &amp; privacy</strong>. Uninstalling the App removes the program; the app-data folder can be deleted from Settings → About → Open data folder.</li>
+</ul>
+<h2>Children</h2>
+<p>The App is not directed at children under 13 and does not knowingly collect information from them.</p>
+<h2>Security</h2>
+<p>Credentials are stored with the operating system&#x27;s credential store. Network requests use HTTPS to all external services. Email HTML is converted to plain text before storage and is never rendered or executed inside the App. The AI layer treats email and document text as untrusted input and never follows instructions contained in it.</p>
+<h2>Changes</h2>
+<p>If this policy changes materially, the App will show the new version and ask you to review it.</p>
+<h2>Contact</h2>
+<p>Questions can be raised through the project&#x27;s issue tracker or by contacting the Author directly.</p></main>
+<footer>Hikari is open source under the MIT License. It runs on your own computer and keeps your data there.</footer>
+</body></html>
